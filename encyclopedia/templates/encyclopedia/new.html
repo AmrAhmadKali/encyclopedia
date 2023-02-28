@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create new Page</title>
+    </head>
+    <body>
+        <form action="{% url 'new_page' %}", method="post">
+            {% csrf_token %}
+            {{ form }}
+        <input type="submit" value="Save">    
+    </form>
+    </body>
+</html>
